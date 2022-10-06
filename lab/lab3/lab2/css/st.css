@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+header{
+    /* margin-top: 200px; */
+}
+
+.fl{
+    display: flex;
+}
+
+.fl h1{
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+
+.menu *{
+    margin: 0;
+    padding: 0;
+    width: 160px;
+}
+
+.menu ul, .menu ol{
+    list-style: none;
+}
+
+.menu > ul{
+    display: flex;
+    margin-top: 5px;
+}
+
+.menu > ul li a {
+    display: block;
+    background: #4a8674;
+    padding: 15px 30px 15px 40px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* .menu > ul li{ */
+    /* border-right: 1px solid #b2b3b5; */
+/* } */
+
+/* .menu > ul li:first-child{ */
+    /* border-left: 1px solid #b2b3b5; */
+/* } */
+
+/* .menu > ul li:last-child{ */
+    /* border-right: 1px solid #b2b3b5; */
+/* } */
+
+.menu li a:hover{
+    background: #b2b3b5;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+
+.menu li ul{
+    position: absolute;
+    display: none; 
+}
+
+.menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #4a87;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+footer{
+    display:flex;
+    justify-content: center; 
+    background: #4a8674;
+    color: white;
+}
+
+
+.ja, .nl, .st, .kor, .fa{
+    /* position: absolute; */
+    
+}
+
+
+.jav, .nlaw, .stup, .korsar, .fag{
+    display: flex;
+    /* padding: 5px 650px 5px 5px; */
+}
+
+.inf{
+    /* padding: 5px 700px 5px 5px; */
+}
+
+
+.contacts, .feed, .data{
+    padding: 10px 100px 10px 200px;
+    display: flex;
+}
+
+.cont, .gmail, .n, .tel, .zal, .form{
+    padding: 10px;
+}
+
+.data{
+    margin-top: 80px;
+}
+
+
+.plus{
+	margin: 10px 20px 10px 10px; 
+    width: 600px;
+}
+
+.ff{
+    display: flex;
+    padding-bottom: 10px;
+    background-color: rgb(247, 249, 251);
+}
+

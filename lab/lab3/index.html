@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    <header>
+        <a href="#" class="logo"><img src="img/p-removebg-preview.png" alt="Logo"></a>
+        <i class='bx bx-menu' id="menu_icon"></i>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">CoLllect on</a></li>
+            <li><a href="#cart">Donation page</a></li>
+        </ul>
+        <div class="header_icon">
+            <a href="#cart"><i class='bx bx-cart' ></i></i></a>
+            <i class='bx bx-search-alt' id="search_icon"></i>
+        </div>
+        <div class="search_box">
+            <input type="search" name="" id="" placeholder="Search...">
+        </div>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="home_text">
+            <h1>A platform that unites everyone who cares. Collection of funds for the needs of the Armed Forces of Ukraine</h1>
+            <a href="#cart" class="btn">Go to charity now</a>
+        </div>
+
+        <ul class="element">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    
+        <div class="home_img">
+            <!-- <img src="img/" alt="Main" height="500">  -->
+        </div>
+    </section> 
+    
+    <section class="about" id="about">
+        <div class="about_img">
+            <img src="img/p.png" alt="Intro">
+        </div>
+    
+        <div class="about_text">
+            <h2>About</h2>
+            <p>
+                Our company has developed a platform for collecting funds for the needs of the Armed Forces of Ukraine, 
+                namely for anti-tank equipment, which is very necessary for our army in the fight against the enemy. 
+            </p>            
+            <a href="lab2/index.html" class="btn" target="_blank">Learn More</a>
+        </div>
+    </section>
+    
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>We collect on</h2>
+        </div>
+    
+        <div class="products_container">
+            <div class="box">
+                <img src="img/ja.jpeg" alt="JAVELIN">
+                <h3>JAVELIN</h3>
+            </div>
+    
+            <div class="box">
+                <img src="img/nlaw.jpeg" alt="NLAW">
+                <h3>NLAW</h3>
+            </div>
+    
+            <div class="box">
+                <img src="img/st.png" alt="Stupna-P">
+                <h3>Stupna-P</h3>
+            </div>
+    
+            <div class="box">
+                <img src="img/kor.png" alt="Korsar">
+                <h3>Korsar</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cart" id="cart">
+        <div class="heading">
+            <h2>Donate</h2>
+        </div>
+        <div class="table">
+            <table class="cart_table" id="cart_table">
+                <thead>
+                    <tr>
+                        <th>For what</th>
+                        <th></th>
+                        <th>The size of the donation</th>
+                        <th>Starting donation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="img/ja.jpeg"></div>
+                        </td>
+                        <td>
+                            <p>Javelin</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_plus" type="button" value="+"><i class='bx bx-plus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_minus" type="button" value="-"><i class='bx bx-minus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="1" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="img/nlaw.jpeg"></div>
+                        </td>
+                        <td>
+                            <p>NLAW</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_plus" type="button" value="+"><i class='bx bx-plus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_minus" type="button" value="-"><i class='bx bx-minus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="1" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="img/st.png"></div>
+                        </td>
+                        <td>
+                            <p>Stupna-P</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_plus" type="button" value="+"><i class='bx bx-plus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_minus" type="button" value="-"><i class='bx bx-minus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="1" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="img/kor.png"></div>
+                        </td>
+                        <td>
+                            <p>Korsar</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_plus" type="button" value="+"><i class='bx bx-plus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_minus" type="button" value="-"><i class='bx bx-minus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="1" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td align="right"><strong>TOTAL = $ <span id="total" class="total">0</span></strong></td>
+                        <td>
+                            <input type="text" value="To pay" class="priceall" disabled>
+                        </td>
+                    </tr>
+                    
+                </tfoot>
+            </table>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="footer_box">
+            <h2>We in social media</h2>
+            
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+    
+        <div class="footer_box">
+                <h2>Projects</h2>
+                <li><a href="#">Volunteering Agents</a></li>
+                <li><a href="#">School Volunteer Agents</a></li>
+                <li><a href="#">My phone friend</a></li>
+                <li><a href="#">Volunteer Platform</a></li>
+        </div>
+    
+        <div class="footer_box">
+                <h2>Navigation</h2>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Volunteers</a></li>
+                <li><a href="#">To support</a></li>
+                <li><a href="#">Blog</a></li>
+        </div>
+    
+        <div class="footer_box">
+                <h3>Contact</h3>
+                <div class="contact">
+                    <span><i class='bx bxs-map'></i>Poltava, Ukraine</span>
+                    <span><i class='bx bxs-phone'></i>(+38)05 00 77 03 11</span>
+                    <span><i class='bx bxs-envelope'></i>volonteeringsupport@gmail.com</span>
+                </div>
+        </div>
+    </section>
+    
+    <div class="copyright">
+        <p>
+            &#169; All Rights Reserved
+        </p>
+    </div>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
