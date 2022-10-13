@@ -91,9 +91,13 @@ async function pastetext(data){
     }
 }
 
-
-
-fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=e69c59f8cb1cb459f0df0479405abcd6')
+const successCallback = (position) => {
+    console.log(position.coords);
+    //console.log(position.coords.longitude);
+    //console.log(position.coords.latitude);
+    var lon = position.coords.longitude
+    var lat = position.coords.longitude
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e69c59f8cb1cb459f0df0479405abcd6`)
 .then(res => res.json())
 .then(function(data){
     console.log(data);
@@ -104,4 +108,20 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=e69c59f8c
 
 })
 .catch(function(){});
+};
+const errorCallback = (error) => {
+    console.error(error);
+};
+
+// const watchid = navigator.geolocation.watchPosition(successCallback, errorCallback)
+
+
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
+    enableHighAccuracy: true,
+    timeout: 5000
+})
+
+
+
+
     
