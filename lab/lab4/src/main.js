@@ -95,8 +95,8 @@ const successCallback = (position) => {
     console.log(position.coords);
     //console.log(position.coords.longitude);
     //console.log(position.coords.latitude);
-    var lon = position.coords.longitude
-    var lat = position.coords.longitude
+    var lon = position.coords.longitude;
+    var lat = position.coords.latitude;
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e69c59f8cb1cb459f0df0479405abcd6`)
 .then(res => res.json())
 .then(function(data){
