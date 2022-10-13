@@ -81,7 +81,6 @@ async function add(title, body){
     </div>`;
     v.innerHTML = con;
     vc.append(v);
-    //<img src="${imgScr}" alt="${alt}">
 }
 
 async function pastetext(data){
@@ -91,3 +90,18 @@ async function pastetext(data){
         await add(title, body)
     }
 }
+
+
+
+fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=e69c59f8cb1cb459f0df0479405abcd6')
+.then(res => res.json())
+.then(function(data){
+    console.log(data);
+    document.querySelector('.p-name').textContent = data.name;
+    document.querySelector('.degree').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
+    document.querySelector('.disc').textContent = data.weather[0]['description'];
+    document.querySelector('.p-img li').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
+
+})
+.catch(function(){});
+    
