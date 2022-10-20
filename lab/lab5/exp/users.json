@@ -4,17 +4,17 @@
       "id": 1,
       "name": "SuperbWriter_Marco",
       "hardness": "HB",
-      "image_link":"./img/pencils1.png"
+      "image_link":"./img/pencils1.jpg"
     },{
       "id": 2,
       "name": "Raffine_Marco",
       "hardness": "HB",
-      "image_link":"./img/pencils2.png"
+      "image_link":"./img/pencils2.jpg"
     },{
       "id": 3,
       "name": "Koh-I-Noor_Polycolor",
       "hardness": "HB",
-      "image_link":"./img/pencils3.png"
+      "image_link":"./img/pencils3.jpg"
     }
   ]
 }
