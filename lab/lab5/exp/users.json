@@ -1,21 +1,20 @@
 {
-  "pancils":[
+  "pencils":[
     {
       "id": 1,
       "name": "SuperbWriter_Marco",
       "hardness": "HB",
-      "image_link":"cc"
+      "image_link":"./img/pencils1.png"
     },{
       "id": 2,
       "name": "Raffine_Marco",
       "hardness": "HB",
-      "image_link":"vv"
+      "image_link":"./img/pencils2.png"
     },{
       "id": 3,
       "name": "Koh-I-Noor_Polycolor",
       "hardness": "HB",
-      "image_link":"bb"
+      "image_link":"./img/pencils3.png"
     }
-
   ]
 }
