@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap");
 * {
-  background-color: peachpuff;
+  background-color: #251100;
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ img {
 }
 
 body {
-  color: rgba(0, 0, 0, 0.6156862745);
+  color: hsla(0deg, 0%, 100%, 0.43);
 }
 
 header {
@@ -38,7 +38,7 @@ header {
 header .shadow {
   padding-top: 4px;
   padding-bottom: 0;
-  background: rgba(0, 0, 0, 0.6156862745);
+  background: hsla(0deg, 0%, 100%, 0.43);
   box-shadow: 2px 2px 10px 4px #847cce;
 }
 header .logo img {
@@ -49,7 +49,7 @@ header .navbar {
 }
 header .navbar a {
   padding: 8px 17px;
-  color: #251100;
+  color: peachpuff;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -68,13 +68,13 @@ header .header_icon {
        column-gap: 0.8rem;
 }
 header .header_icon .bx {
-  color: #251100;
+  color: peachpuff;
 }
 header .header_icon .bx:hover {
   color: rgba(85, 96, 167, 0.6156862745);
 }
 header #menu_icon {
-  color: #251100;
+  color: peachpuff;
   font-size: 24px;
   z-index: 100001;
   cursor: pointer;
@@ -84,7 +84,7 @@ header #menu_icon {
 .home {
   width: 100%;
   min-height: 100vh;
-  background: #251100;
+  background: peachpuff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -96,10 +96,13 @@ header #menu_icon {
 }
 .home .home_text h1 {
   font-size: 3.4rem;
-  color: rgba(0, 0, 0, 0.6156862745);
+  color: hsla(0deg, 0%, 100%, 0.43);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0.5rem 0 1.4rem;
+}
+.home .home_img {
+  background-color: peachpuff;
 }
 
 about {
@@ -129,14 +132,14 @@ about .about_text p {
   position: relative;
   padding: 10px;
   display: flex;
-  background-color: #251100;
+  background-color: peachpuff;
   flex-direction: column;
   justify-content: center;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 10px 4px #847cce;
 }
 .items .items-container .box .i-title {
-  color: peachpuff;
+  color: #251100;
 }
 .items .items-container .box img {
   width: 100%;
@@ -146,7 +149,7 @@ about .about_text p {
   -o-object-position: center;
      object-position: center;
   padding: 20px;
-  background-color: #251100;
+  background-color: peachpuff;
 }
 .items .items-container .box h3, .items .items-container .box h4 {
   text-align: center;
@@ -154,32 +157,33 @@ about .about_text p {
   font-weight: 600;
   text-transform: uppercase;
   margin: 0.5rem 0 0.5rem;
-  background-color: #251100;
+  background-color: peachpuff;
 }
 .items .items-container .box .content {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #251100;
+  background-color: peachpuff;
 }
 .items .items-container .box .content span {
   padding: 0 1rem;
-  color: #251100;
-  background-color: peachpuff;
+  color: peachpuff;
+  background-color: #251100;
   border-radius: 4px;
   font-weight: 500;
 }
 
 .footer_box {
   padding: 5px;
-  background-color: #251100;
-  color: #251100;
+  background-color: peachpuff;
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 .footer_box p {
   font-size: small;
+  color: #251100;
+  background-color: peachpuff;
 }
 
 @media (max-width: 1058px) {
@@ -218,17 +222,17 @@ about .about_text p {
     right: 0;
     display: flex;
     flex-direction: column;
-    background: peachpuff;
+    background: #251100;
     row-gap: 1.4rem;
     padding: 20px;
     transition: 0.3s;
     text-align: center;
   }
   .navbar a {
-    color: rgba(0, 0, 0, 0.6156862745);
+    color: hsla(0deg, 0%, 100%, 0.43);
   }
   .navbar a:hover {
-    color: #251100;
+    color: peachpuff;
   }
   .navbar.active {
     top: 100%;
